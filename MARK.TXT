@@ -1,0 +1,8 @@
+Good but not enough
+
+Not good:
+For create alembic we must first run:
+    docker-compose up -d (for create the database local) migration and then docker-compose down (for stop the database local) and 
+    then docker-compose -f docker-compose.prod.yml up -d --build (for create the database production) and 
+    then docker-compose -f docker-compose.prod.yml down (for stop the database production)
+Then in production we run: docker-compose -f docker-compose.prod.yml up -d --build 
